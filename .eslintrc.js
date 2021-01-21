@@ -1,5 +1,5 @@
 // https://eslint.org/docs/user-guide/configuring
-
+// 管理检测js代码风格
 module.exports = {
   root: true,
   parserOptions: {

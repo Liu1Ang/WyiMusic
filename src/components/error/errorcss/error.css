@@ -1,0 +1,40 @@
+.errorwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F0F2F5;
+  height: calc(100vh - 60px);
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.errorpage {
+  width: 800px;
+  height: 200px;
+}
+
+.errorpage-left {
+  display: inline-block;
+  width: 483px;
+}
+
+.errorpage-right {
+  height: 193px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 44px;
+}
+
+.errorpage .errorpage-right div h1 {
+  font-size: 100px;
+  font-weight: normal;
+  color: #383B43;
+}
+
+.errorpage .errorpage-right div p {
+  padding: 0;
+  margin-top: 42px;
+  list-style: none;
+  line-height: 40px;
+  color: #959699;
+}

@@ -1,0 +1,28 @@
+html,body,div,p,h1,h2,h3,h4,h5,h6,img{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+.f12{
+    font-size: 12px;
+}
+.f14{
+    font-size: 14px;
+}
+.f16{
+    font-size: 16px;
+}
+.f18{
+    font-size: 18px;
+}
+.f20{
+    font-size: 20px;
+}
+.el-scrollbar__wrap{
+    overflow-x: hidden;
+}

@@ -90,6 +90,15 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted () {
+    let a = '1'
+
+    let b12312123 = () => {
+      console.log(a)
+    }
+
+    b12312123()
   }
 }
 </script>

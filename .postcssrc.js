@@ -1,5 +1,5 @@
 // https://github.com/michael-ciniawsky/postcss-load-config
-
+// 兼容浏览器，增加css前缀
 module.exports = {
   "plugins": {
     "postcss-import": {},
