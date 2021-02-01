@@ -6,11 +6,26 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // 代理
+      '/music':{
+        //是
+        target: 'http://localhost:3000',
+        // 是否将主机头的源更改为目标URL
+        changeOrigin: true,
+        // 是否代理websocket
+        ws: true,
+        // 是否验证SSL证书
+        secure: false,
+        // 重写目标的url路径
+        pathRewrite: {
+          '^/music': ''
+        },
+      },
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

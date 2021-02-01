@@ -6,7 +6,7 @@
                 <el-aside class="aside" width="200px">
                     <el-scrollbar style="height:100%">
                         <template v-for="item in 60">
-                            {{'Aside'+ item}}</br>
+                            {{'Aside'+ item}}
                         </template>
                     </el-scrollbar>
                 </el-aside>

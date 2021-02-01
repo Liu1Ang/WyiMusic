@@ -3,7 +3,6 @@
 main
     <template v-for="item in 60">
         <div :key="item">
-            </br>
             {{'main'+ item}}
         </div>
     </template>

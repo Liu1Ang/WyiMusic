@@ -2,4 +2,3 @@
 /config/
 /dist/
 /*.js
-忽略文件的js检查
