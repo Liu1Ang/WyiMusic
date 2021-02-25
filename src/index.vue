@@ -1,43 +1,31 @@
 <template>
     <div id="index">
-        <el-container>
-            <el-header class="header">Header</el-header>
+        <el-scrollbar style="height:100vh">
+            <headers></headers>
             <el-container class="container">
-                <el-aside class="aside" width="200px">
-                    <el-scrollbar style="height:100%">
-                        <template v-for="item in 60">
-                            {{'Aside'+ item}}
-                        </template>
-                    </el-scrollbar>
-                </el-aside>
-                <el-main>
-                    <el-scrollbar style="height:100%">
-                        <router-view>
-                            main
-                        </router-view>
-                    </el-scrollbar>
-                </el-main>
+                <router-view>
+                    main
+                </router-view>
             </el-container>
             <el-footer class="footer" height="70px">Footer</el-footer>
-        </el-container>
+        </el-scrollbar>
     </div>
 </template>
 
 <script>
+import headers from './views/home/header'
 export default {
-  name: 'index'
+  name: 'index',
+  components: {
+    headers
+  }
 }
 </script>
 
-<style scoped>
-.header {
-    background: #ec4141;
-}
+<style>
 .container {
-    height: calc(100vh - 130px);
-}
-.aside {
-    border-right: 1px solid #e1e1e1;
+    width:80%;
+    margin: 0 auto;
 }
 .footer{
     background: #f6f6f8;

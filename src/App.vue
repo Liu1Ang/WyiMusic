@@ -18,5 +18,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: #f5f5f5;
 }
 </style>

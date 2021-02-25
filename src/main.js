@@ -11,6 +11,9 @@ import './assets/css/base.css'
 // api接口
 import api from './api'
 
+// vuex
+import store from './store'
+
 Vue.config.productionTip = false
 Vue.prototype.$api = api
 Vue.use(ElementUI)
@@ -18,6 +21,7 @@ Vue.use(ElementUI)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

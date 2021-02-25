@@ -1,6 +1,6 @@
 <template>
     <div id="main">
-main
+        main
     <template v-for="item in 60">
         <div :key="item">
             {{'main'+ item}}
@@ -11,7 +11,11 @@ main
 
 <script>
 export default {
-  name: 'main'
+  name: 'main',
+  data () {
+    return {
+    }
+  }
 }
 </script>
 

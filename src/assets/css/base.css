@@ -1,4 +1,4 @@
-html,body,div,p,h1,h2,h3,h4,h5,h6,img{
+html,body,div,p,h1,h2,h3,h4,h5,h6,img,ul,li{
     margin: 0;
     padding: 0;
 }
@@ -7,6 +7,11 @@ html,body{
 }
 a{
     text-decoration: none;
+    color: #fff;
+}
+li{
+    display: inline-block;
+    list-style: none;
 }
 .f12{
     font-size: 12px;
