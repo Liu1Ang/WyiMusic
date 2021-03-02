@@ -25,12 +25,9 @@
       </el-col>
       <el-col :span="4"
               style="display:flex;justify-content:center;">
-        <div style="margin-top:17px;cursor: pointer;width:40px;border-radius:50%;"
+        <div :style="{'margin-top':'10px','width':'40px','height':'40px','border-radius':'50%','background':'url('+$store.state.avatarUrl+') center center / contain'}"
              v-show="loginText !== '登录'"
-             :title="$store.state.nickname">
-          <img :src="$store.state.avatarUrl"
-               :alt="$store.state.nickname">
-        </div>
+             :title="$store.state.nickname"></div>
         <div style="margin-top:17px;margin-left:10px;cursor: pointer;"
              @click="loginInit">{{loginText}}</div>
       </el-col>
