@@ -11,9 +11,9 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       // 代理
-      '/music':{
+      '/music': {
         //是
-        target: 'http://localhost:3000',
+        target: 'http://192.168.36.78:3000',
         // 是否将主机头的源更改为目标URL
         changeOrigin: true,
         // 是否代理websocket

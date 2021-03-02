@@ -1,5 +1,13 @@
 let mutations = {
   // 调用this.$store.commit('newNum',sum)
+  setToken (state, newVal) {
+    state.token = newVal
+    localStorage.setItem('WYIMUSICINFO', JSON.stringify(state))
+  },
+  setUserId (state, newVal) {
+    state.userId = newVal
+    localStorage.setItem('WYIMUSICINFO', JSON.stringify(state))
+  },
   setPhone (state, newVal) {
     state.phone = newVal
     localStorage.setItem('WYIMUSICINFO', JSON.stringify(state))
@@ -26,6 +34,10 @@ let mutations = {
   },
   setMusicUrl (state, newVal) {
     state.musicUrl = newVal
+    localStorage.setItem('WYIMUSICINFO', JSON.stringify(state))
+  },
+  setAvatarUrl (state, newVal) {
+    state.avatarUrl = newVal
     localStorage.setItem('WYIMUSICINFO', JSON.stringify(state))
   }
 }

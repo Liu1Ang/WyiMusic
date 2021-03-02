@@ -11,6 +11,8 @@ const service = axios.create({
   timeout: 5000
 })
 
+const BASEURL = process.env.NODE_ENV === 'production' ? '/music' : '/music'
+console.log(BASEURL)
 // 2、请求拦截器
 service.interceptors.request.use(config => {
   // 发送前做的处理，数据转化，配置请求头，设置token
@@ -103,7 +105,7 @@ export default service
 
 export function get (url, params = {}) {
   return new Promise((resolve, reject) => {
-    axios.get(url, {
+    axios.get(BASEURL + url, {
       params: params
     }).then(response => {
       resolve(response.data)
@@ -121,7 +123,7 @@ export function get (url, params = {}) {
 
 export function post (url, data = {}) {
   return new Promise((resolve, reject) => {
-    axios.post(url, JSON.stringify(data))
+    axios.post(BASEURL + url, JSON.stringify(data))
       .then(response => {
         resolve(response.data)
       }, err => {
@@ -132,7 +134,7 @@ export function post (url, data = {}) {
 
 export function postBody (url, data = {}) {
   return new Promise((resolve, reject) => {
-    axios.post(url, JSON.stringify(data), {
+    axios.post(BASEURL + url, JSON.stringify(data), {
       headers: {
         //  头部信息
         'Content-Type': 'application/json;charset=utf-8'

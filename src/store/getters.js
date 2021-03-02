@@ -40,6 +40,24 @@ let getters = {
       state = JSON.parse(localStorage.getItem('WYIMUSICINFO'))
     }
     return state.musicUrl
+  },
+  getAvatarUrl (state) {
+    if (localStorage.getItem('WYIMUSICINFO')) {
+      state = JSON.parse(localStorage.getItem('WYIMUSICINFO'))
+    }
+    return state.avatarUrl
+  },
+  getUserId (state) {
+    if (localStorage.getItem('WYIMUSICINFO')) {
+      state = JSON.parse(localStorage.getItem('WYIMUSICINFO'))
+    }
+    return state.userId
+  },
+  getToken (state) {
+    if (localStorage.getItem('WYIMUSICINFO')) {
+      state = JSON.parse(localStorage.getItem('WYIMUSICINFO'))
+    }
+    return state.token
   }
 }
 
